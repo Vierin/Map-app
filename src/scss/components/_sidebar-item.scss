@@ -1,0 +1,72 @@
+.sidebar-item {
+    &__head {
+        border-bottom: 3px solid $color-black;
+        padding-bottom: 40px;
+    }
+
+    &__img {
+        position: relative;
+
+        img:not(.pin) {
+            width: 100%;
+            aspect-ratio: 360/170;
+        }
+    }
+
+    &__marker {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+    &__title {
+        @include font-size(34, 1);
+        text-transform: uppercase;
+        font-family: $font-book;
+        padding-top: 30px;
+    }
+
+    &__category {
+        @include font-size(18, 1);
+        position: relative;
+        padding-left: 20px;
+        font-family: $font-bold;
+        margin-top: 5px;
+
+        &::first-letter {
+            text-transform: uppercase;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: 3px solid $color-black;
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+        }
+    }
+
+    &__desc {
+        @include font-size(14, 18);
+        font-family: $font-bold;
+        padding-top: 15px;
+        max-width: 80%;
+    }
+
+    &__url {
+        @include font-size(13, 18);
+        font-family: $font-bold;
+        margin-top: 22px;
+        display: block;
+
+        img {
+            width: 15px;
+            margin-right: 5px;
+        }
+    }
+}

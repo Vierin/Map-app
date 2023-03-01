@@ -1,0 +1,72 @@
+{
+    "paths": {
+        "xls": "",
+        "vtt": {
+            "source": "src/media/subtitles/",
+            "dest": "views/subtitles/"
+        },
+        "sass": {
+            "main": "src/scss/main.scss",
+            "dest": "dist/css"
+        },
+        "styles": {
+            "main": ["src/scss/**/*.scss"]
+        },
+        "scripts": {
+            "ts": "src/ts/**/*.ts",
+            "main": "src/ts/Main.ts",
+            "components": "src/ts/components/",
+            "backgrounds": "src/ts/backgrounds/",
+            "definitions": "src/ts/**/*.d.ts",
+            "plugins": "src/js/*.js",
+            "libs": [
+                "node_modules/gsap/dist/gsap.js",
+                "node_modules/gsap/dist/ScrollTrigger.js",
+                "node_modules/imagesloaded/imagesloaded.pkgd.min.js",
+                "node_modules/stats.js/build/stats.min.js",
+                "node_modules/swiper/swiper-bundle.min.js"
+            ],
+            "dest": "dist/js",
+            "file": "script.js"
+        },
+        "images": {
+            "source": "src/media/images/**/*.+(jpg|png|gif|svg)",
+            "compressed": "src/media/images-compressed/**/*.+(jpg|png|gif|svg)",
+            "sourceSharp": "src/media/images",
+            "inputFormats": [".jpg", ".png"],
+            "outputFormats": [".jpg", ".png", ".webp", ".avif"],
+            "dest": "dist/media"
+        },
+        "tinypng": {
+            "files": "src/media/images-compressed/**/*",
+            "folder": "src/media/images-compressed"
+        },
+        "multimedia": {
+            "source": "src/media/multimedia/**/*.+(mp4|webm|mp3)",
+            "dest": "dist/media"
+        },
+        "fonts": {
+            "source": "src/fonts/",
+            "dest": "src/scss/fonts/"
+        },
+        "lottie": {
+            "source": "src/media/lottie/**/*.json",
+            "dest": "dist/media/lottie/"
+        },
+        "svg": {
+            "files": "src/svg/**/*.svg",
+            "inline": "src/svg/inline/*.svg",
+            "nomin": "src/svg/nomin/*.svg",
+            "sprite": "src/svg/sprite/*.svg",
+            "dest": "views/svgs/"
+        },
+        "json": ["*.json"],
+        "html": {
+            "main": "views/index.html",
+            "partials": "./views/partials/",
+            "files": ["*.json", "views/**/*.html"],
+            "targets": ["index", "all"],
+            "dest": "dist"
+        }
+    }
+}

@@ -1,0 +1,525 @@
+{
+  "settings": {},
+  "sections": [
+    {
+      "modules": [
+        {
+          "type": "hero",
+          "all": true,
+          "image": {
+            "preload": true,
+            "desktop": "./media/cindy01.jpg",
+            "mobile": "https://picsum.photos/750/1154?grayscale"
+          },
+          "title": "Lorem ipsum",
+          "sequence": {
+            "length": 44,
+            "fps": 30,
+            "path": "http://subzero2.wp.huncwot.net/dist/images/hero",
+            "repeat": 1,
+            "autoplay": true
+          }
+        },
+        {
+          "type": "heading",
+          "paddingTop": true,
+          "all": true,
+          "grid": true,
+          "id": "section1",
+          "title": "Heading module",
+          "subtitle": ""
+        },
+        {
+          "type": "text-two-cols",
+          "all": true,
+          "grid": true,
+          "paddingTop": true,
+          "text1": "<a href='#lightbox1'>At vero</a> eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
+          "text2": "At vero eos <a href='#lightbox2'>et accusamus et</a> iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+        },
+        {
+          "type": "hero",
+          "all": true,
+          "image": {
+            "preload": true,
+            "desktop": "./media/cindy01.jpg",
+            "mobile": "https://picsum.photos/750/1154?grayscale"
+          },
+          "title": "Lorem ipsum"
+        },
+        {
+          "type": "video",
+          "all": true,
+          "grid": true,
+          "paddingTopBig": true,
+          "paddingBottomBig": true,
+          "video": {
+            "src": "http://assets.huncwot.net/templates-wp/video/stock-video1.mp4",
+            "cover": true,
+            "autoplay": true,
+            "controls": true
+          }
+        },
+        {
+          "type": "hero",
+          "all": true,
+          "video": {
+            "src": "http://assets.huncwot.net/templates-wp/video/stock-video2.mp4",
+            "cover": true,
+            "fullHeight": true,
+            "autoplay": true
+          },
+          "title": "Lorem ipsum ",
+          "copy": "lorem ipsum lorem ipsum",
+          "scroll": {
+            "target": "#section1"
+          }
+        },
+        {
+          "type": "before-after",
+          "descr": "Slide to see safety improvements made",
+          "leftImage":"https://picsum.photos/id/10/1400/700",
+          "rightImage":"https://picsum.photos/id/1001/1400/700",
+          "hotspots": [
+            {
+              "info":"Pedestrians taking a risk walking in the path of traffic",
+              "topMobile":63,
+              "leftMobile": 13,
+              "top":79,
+              "left": 39
+            },
+            {
+              "info":"No speed limit signs and no indication that vehicles need to watch out for pedestrians",
+              "top":54,
+              "left": 55,
+              "topMobile":44,
+              "leftMobile": 40
+            },
+            {
+              "info":"No designated area for pedestrians to wait or walk",
+              "top": 83,
+              "left": 85,
+              "topMobile":64,
+              "leftMobile": 88
+            },
+            {
+              "info":"No signage designating a crosswalk",
+              "top":44,
+              "left": 83,
+              "topMobile":40,
+              "leftMobile": 84
+            }
+          ]
+        },
+        {
+          "type": "flip-card",
+          "all": true,
+          "paddingTop": true,
+          "id": "",
+          "title": "Click on the card to learn more",
+          "hover": true,
+          "list": {
+            "items": [
+              {
+                "item": "1",
+                "text_front": "<p class=bolder>Title<p>Lorem ipsum sit dolor amet</p>",
+                "image_back": "http://battelle3.wp.huncwot.net/dist/images/svg/icon_clock.svg"
+              },
+              {
+                "item": "2",
+                "image_front": "http://battelle3.wp.huncwot.net/dist/images/svg/icon_lights.svg",
+                "text_front": "<p>Lorem ipsum</p>",
+                "text_back": "<p class=bolder>Lorem ipsum backflip</p><p>Lorem ipsum At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.</p>"
+              },
+              {
+                "item": "3",
+                "image_front": "http://battelle3.wp.huncwot.net/dist/images/svg/icon_wifi.svg",
+                "image_back": "http://battelle3.wp.huncwot.net/dist/images/svg/icon_clock.svg"
+              }
+            ]
+          }
+        },
+        {
+          "type": "audio",
+          "all": true,
+          "grid": true,
+          "paddingTopBig": true,
+          "paddingBottomBig": true,
+            "audio": {
+                "src": "http://assets.huncwot.net/templates-wp/audio/bensound-memories.mp3",
+                "controls": true,
+                "caption": "Audioplayer module"
+            }
+        },
+        {
+          "type": "quote",
+          "all": true,
+          "grid": true,
+          "id": "js-lightbox-2",
+          "bgColor": "#ddd",
+          "text": "<div>Lorem ipsum, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>",
+          "footer": "— John Doe Jr., CEO of Garbage at Trash Institute of Technology"
+        },
+        {
+          "type": "text-quote-right",
+          "noPaddingTop": true,
+          "all": true,
+          "sticky": true,
+          "grid": true,
+          "text": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
+          "quote": {
+            "aside": true,
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mi augue, consectetur non leo eu.</p>",
+            "footer": "<p>— John Doe Jr., CEO of Garbage at Trash Institute of Technology</p>"
+          }
+        },
+        {
+          "type": "quote",
+          "all": true,
+          "grid": true,
+          "id": "quote2",
+          "text": "<div>Lorem ipsum, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>",
+          "footer": "— John Doe Jr., CEO of Garbage at Trash Institute of Technology"
+        },
+        {
+          "type": "text-image-right",
+          "all": true,
+          "reverse": true,
+          "id": "section-right",
+          "text": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
+          "image": {
+            "image": "http://nar6.wp.huncwot.net/dist/images/slider-4.jpg",
+            "imageCaption": "Image caption"
+          },
+          "lightbox": true,
+          "lightbox_id": "1"
+        },
+        {
+          "type": "text-image-left",
+          "all": true,
+          "reverse": true,
+          "id": "section-left",
+          "text": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
+          "image": {
+            "image": "http://nar6.wp.huncwot.net/dist/images/slider-4.jpg",
+            "imageCaption": "Image caption"
+          },
+          "lightbox": true,
+          "lightbox_id": "2"
+        },
+        {
+          "type": "text-image-left",
+          "all": true,
+          "grid": true,
+          "sticky": true,
+          "text": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.Cras quis rutrum mauris. Mauris sed metus molestie ipsum ultrices varius. Fusce vitae varius leo. Etiam condimentum justo id egestas maximus. Nulla lobortis viverra ante. Duis arcu elit, tincidunt quis quam id, cursus porta libero. Vivamus pharetra posuere placerat. Phasellus eget libero consectetur, lobortis turpis sed, convallis lorem. Nullam tristique, massa in gravida ullamcorper, sapien augue facilisis justo, sed imperdiet felis ipsum id massa. Cras id nisl sit amet magna rutrum sodales. Phasellus posuere condimentum metus, eu tincidunt massa laoreet vel.Aenean in faucibus lorem. Pellentesque pretium accumsan elit nec faucibus. Duis ante dolor, fringilla in massa nec, congue finibus diam. Quisque viverra sapien a ultricies congue. Donec nec eros lorem. Morbi fringilla metus a tellus imperdiet, ut lobortis ligula feugiat. Cras vel neque sit amet quam sagittis tempor eu id tortor. Donec mollis non justo sit amet rutrum. Fusce vulputate ligula quis nibh maximus, a blandit dolor egestas.Nulla fermentum magna nibh. Sed bibendum orci non lacus mattis maximus. Pellentesque elit erat, euismod a felis id, fermentum porttitor nisl. Curabitur in odio posuere, varius ligula luctus, molestie neque. Vivamus vulputate gravida consequat. Curabitur semper ipsum tristique fringilla pellentesque. Nam auctor, ante ut cursus molestie, libero ex consectetur tellus, ac tincidunt magna ex nec tellus. Etiam convallis volutpat volutpat. Ut eget fringilla libero. Pellentesque quis viverra leo, ac egestas leo. Vestibulum gravida tincidunt lacus, luctus malesuada velit. Proin mauris arcu, ultricies nec sapien in, condimentum volutpat ex.",
+          "image": {
+            "image": "http://nar6.wp.huncwot.net/dist/images/slider-4.jpg",
+            "imageCaption": "Image caption"
+          }
+        },
+        {
+          "type": "video",
+          "all": true,
+          "grid": true,
+          "text": " Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.Cras quis rutrum mauris. Mauris sed metus molestie ipsum ultrices varius. Fusce vitae varius leo. Etiam condimentum justo id egestas maximus. Nulla lobortis viverra ante. Duis arcu elit, tincidunt quis quam id, cursus porta libero. Vivamus pharetra posuere placerat. Phasellus eget libero consectetur, lobortis turpis sed, convallis lorem. Nullam tristique, massa in gravida ullamcorper, sapien augue facilisis justo, sed imperdiet felis ipsum id massa. Cras id nisl sit amet magna rutrum sodales. Phasellus posuere condimentum metus, eu tincidunt massa laoreet vel.Aenean in faucibus lorem. Pellentesque pretium accumsan elit nec faucibus. Duis ante dolor, fringilla in massa nec, congue finibus diam. Quisque viverra sapien a ultricies congue. Donec nec eros lorem. Morbi fringilla metus a tellus imperdiet, ut lobortis ligula feugiat. Cras vel neque sit amet quam sagittis tempor eu id tortor. Donec mollis non justo sit amet rutrum. Fusce vulputate ligula quis nibh maximus, a blandit dolor egestas.Nulla fermentum magna nibh. Sed bibendum orci non lacus mattis maximus. Pellentesque elit erat, euismod a felis id, fermentum porttitor nisl. Curabitur in odio posuere, varius ligula luctus, molestie neque. Vivamus vulputate gravida consequat. Curabitur semper ipsum tristique fringilla pellentesque. Nam auctor, ante ut cursus molestie, libero ex consectetur tellus, ac tincidunt magna ex nec tellus. Etiam convallis volutpat volutpat. Ut eget fringilla libero. Pellentesque quis viverra leo, ac egestas leo. Vestibulum gravida tincidunt lacus, luctus malesuada velit. Proin mauris arcu, ultricies nec sapien in, condimentum volutpat ex.",
+          "wapoVideo": {
+            "id": "59c4311ee4b02a94fdcd37cc",
+            "autoplay": true,
+            "player": "player111",
+            "center": true,
+            "yt": "5KLVJvGD6yI",
+            "poster": "",
+            "uuid": "17144d44-9f15-11e7-b2a7-bc70b6f98089",
+            "caption": ""
+          }
+        },
+        {
+          "type": "text-slider-right",
+          "all": true,
+          "grid": true,
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis voluptatum quos corporis enim possimus, rem numquam dignissimos deserunt ullam blanditiis similique architecto nostrum libero, rerum earum. Aliquam fugit odit neque!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis voluptatum quos corporis enim possimus, rem numquam dignissimos deserunt ullam blanditiis similique architecto nostrum libero, rerum earum. Aliquam fugit odit neque!",
+          "slides": [
+            {
+              "image": "http://nar9.wp.huncwot.net/dist/images/slider-1.jpg"
+            },
+            {
+              "image": "http://nar9.wp.huncwot.net/dist/images/slider-2.jpg"
+            },
+            {
+              "image": "http://nar9.wp.huncwot.net/dist/images/slider-3.jpg"
+            },
+            {
+              "image": "http://nar9.wp.huncwot.net/dist/images/slider-4.jpg"
+            },
+            {
+              "image": "http://nar9.wp.huncwot.net/dist/images/slider-5.jpg"
+            },
+            {
+              "image": "http://nar9.wp.huncwot.net/dist/images/slider-6.jpg"
+            }
+          ],
+          "options": {
+            "arrows": true,
+            "dots": true,
+            "infinite": false
+          }
+        },
+        {
+          "type": "text-image-left",
+          "all": true,
+          "grid": true,
+          "reverse": true,
+          "title": "Lorem ipsum",
+          "text": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
+          "image": {
+            "image": "http://providence1.wp.huncwot.net/dist/images/pillar2-img.jpg",
+            "imageCaption": "<span class=bolder>Caption: </span>Image caption"
+          }
+        },
+        {
+          "type": "text-one-col",
+          "all": true,
+          "grid": true,
+          "id": "",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mi augue, consectetur non leo eu, lobortis accumsan risus. Curabitur consectetur mauris et tempus pulvinar. In a sem nec sapien ornare dignissim. Nunc varius ex nec libero iaculis sollicitudin.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mi augue, consectetur non leo eu, lobortis accumsan risus. Curabitur consectetur mauris et tempus pulvinar. In a sem nec sapien ornare dignissim. Nunc varius ex nec libero iaculis sollicitudin."
+        },
+        {
+          "type": "text-video-right",
+          "all": true,
+          "grid": true,
+          "id": "videoRight",
+          "title": "Lorem ipsum dolor sit",
+          "texts": [
+            "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident",
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
+            "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident"
+          ],
+          "sticky": true,
+          "wapoVideo": {
+            "id": "593add7ce4b040fc6bb0633d",
+            "player": "player2",
+            "yt": "",
+            "poster": "http://s3.amazonaws.com/posttv-thumbnails-prod/06-09-2017/t_1497029951840_name_Dell_Vig_Screenshot.png",
+            "uuid": "b46986a4-4d3a-11e7-987c-42ab5745db2e",
+            "caption": "<span class=bolder>Caption: </span>Video caption"
+          }
+        },
+        {
+          "type": "quiz",
+          "all": true,
+          "id": "5",
+          "title": "Are you ready for the digital revolution coming to finance?",
+          "subtitle": "Take this quiz and find out.",
+          "questions": [
+            {
+              "name": "one",
+              "label": "Question 1",
+              "question": "U.S. retail stores lose how much money annually as a result of stolen cash?",
+              "type": "single",
+              "options": {
+                "live": true
+              },
+              "answers": [
+                {
+                  "answer": "$10 bilion",
+                  "tracking": "quiz/question-one/10B",
+                  "truth": "0"
+                },
+                {
+                  "answer": "$75 bilion",
+                  "tracking": "quiz/question-one/75B",
+                  "truth": "0"
+                },
+                {
+                  "answer": "$1 bilion",
+                  "tracking": "quiz/question-one/1B",
+                  "truth": "0"
+                },
+                {
+                  "answer": "$40 bilion",
+                  "tracking": "quiz/question-one/40B",
+                  "truth": "1"
+                }
+              ]
+            },
+            {
+              "name": "two",
+              "label": "Question 2",
+              "question": "What country, at 61 percent, has the highest proportion of noncash transaction methods?",
+              "type": "single",
+              "options": {
+                "live": true
+              },
+              "answers": [
+                {
+                  "answer": "France",
+                  "tracking": "quiz/question-two/france",
+                  "truth": "0"
+                },
+                {
+                  "answer": "Singapore",
+                  "tracking": "quiz/question-two/singapore",
+                  "truth": "1"
+                },
+                {
+                  "answer": "The United States",
+                  "tracking": "quiz/question-two/usa",
+                  "truth": "0"
+                },
+                {
+                  "answer": "Namibia",
+                  "tracking": "quiz/question-two/namibia",
+                  "truth": "0"
+                }
+              ]
+            },
+            {
+              "name": "three",
+              "label": "Question 3",
+              "question": "Mobile money services are on the rise. In December 2016, for instance, how much money did the industry transact?",
+              "type": "single",
+              "options": {
+                "live": true
+              },
+              "answers": [
+                {
+                  "answer": "$175 million",
+                  "tracking": "quiz/question-three/175B",
+                  "truth": "0"
+                },
+                {
+                  "answer": "$600 million",
+                  "tracking": "quiz/question-three/600B",
+                  "truth": "0"
+                },
+                {
+                  "answer": "$1.3 billion",
+                  "tracking": "quiz/question-three/1.3B",
+                  "truth": "1"
+                },
+                {
+                  "answer": "$50 billion",
+                  "tracking": "quiz/question-three/50B",
+                  "truth": "0"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "quiz",
+          "all": true,
+          "id": "5",
+          "logo": "/dist/images/logo.png",
+          "questions": [
+            {
+              "name": "one",
+              "question": "What part of transferring schools would be top of mind for you?",
+              "type": "single",
+              "options": {
+                "database": true,
+                "live": true,
+                "results": "percentage"
+              },
+              "answers": [
+                {
+                  "answer": "Figuring out which of my credits transfer",
+                  "tracking": "quiz/what-part-of-transferring-schools/figuring-out-credits"
+                },
+                {
+                  "answer": "Understanding how my finances would change",
+                  "tracking": "quiz/what-part-of-transferring-schools/understanding-my-finances"
+                },
+                {
+                  "answer": "Securing a new living situation",
+                  "tracking": "quiz/what-part-of-transferring-schools/new-living-situation"
+                },
+                {
+                  "answer": "Readjusting to a new environment",
+                  "tracking": "quiz/what-part-of-transferring-schools/readjusting-to-a-new-environment"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "all": true,
+          "title": "Heading",
+          "subtitle": "Subheading",
+          "id": "test",
+          "center": true,
+          "grid": true,
+          "parallax": "200",
+          "componentsList": [
+            {
+              "type": "image",
+              "image": "http://providence1.wp.huncwot.net/dist/images/pillar2-img.jpg"
+            },
+            {
+              "type": "button",
+              "text": "Click me",
+              "tracking": "cta/tracking",
+              "animation": "fadeUp",
+              "link": "#"
+            }
+          ]
+        },
+        {
+          "type": "related",
+          "all": true,
+          "grid": true,
+          "heading": "Related content",
+          "list": [
+            {
+              "title": "Lorem ipsum",
+              "link": "#",
+              "image": "http://nar9.wp.huncwot.net/dist/images/trend1.png"
+            },
+            {
+              "title": "Lorem ipsum 2",
+              "link": "#",
+              "image": "http://nar9.wp.huncwot.net/dist/images/trend2.png"
+            },
+            {
+              "title": "Loremipsum3",
+              "link": "#",
+              "image": "http://nar9.wp.huncwot.net/dist/images/trend3.png"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "all": true,
+          "grid": true,
+          "title": "Footer heading",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mi augue, consectetur non leo eu, lobortis accumsan risus. Curabitur consectetur mauris et tempus pulvinar. In a sem nec sapien ornare dignissim. Nunc varius ex nec libero iaculis sollicitudin.",
+          "bgImage": "http://subzero3.wp.huncwot.net/dist/images/hotspots-bg.jpg",
+          "button": {
+            "link": "#",
+            "tracking": "cta/tracking-code",
+            "animation": "fadeUp",
+            "text": "Get started"
+          }
+        },
+        {
+          "type": "footer",
+          "all": true,
+          "grid": true,
+          "center": true,
+          "bgColor": "#c6c6c6",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mi augue, consectetur non leo eu, lobortis accumsan risus. Curabitur consectetur mauris et tempus pulvinar. In a sem nec sapien ornare dignissim. Nunc varius ex nec libero iaculis sollicitudin.",
+          "button": {
+            "link": "#",
+            "tracking": "cta/tracking-code",
+            "animation": "fadeUp",
+            "text": "Get started"
+          },
+          "footer": true,
+          "info": "<p><span class='bold'>Sources</span>: Lorem ipsum dolor sit amet, Consectetur adipiscing elit, Nullam mi augue, Consectetur non leo eu, Lobortis accumsan risus.</p>"
+        }
+      ]
+    }
+  ]
+}

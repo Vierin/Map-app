@@ -1,0 +1,97 @@
+.sidebar {
+    position: absolute;
+    inset: 0 0 0 100%;
+    width: vw(440);
+    padding: vw(40);
+    background: #fff;
+    transition: transform 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint(not-desktop) {
+        padding: 40px;
+    }
+
+    &.is-shown {
+        transform: translateX(-100%);
+    }
+
+    &__arr {
+        @include font-size(22, 1);
+        font-family: $font-bold;
+        text-transform: uppercase;
+        position: relative;
+        width: calc(50% - 4px);
+        border-top: 3px solid $color-black;
+        padding-top: 14px;
+
+        span {
+            display: block;
+            cursor: pointer;
+        }
+
+        &--next {
+            text-align: right;
+        }
+    }
+
+    &__count {
+        @include font-size(22, 1);
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        text-transform: uppercase;
+        font-family: $font-bold;
+    }
+
+    &__nav {
+        margin-top: auto;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__close {
+        background: $color-white;
+        border: 3px solid $color-black;
+        border-radius: 50%;
+        height: 42px;
+        width: 42px;
+        position: absolute;
+        top: 21px;
+        right: 21px;
+        cursor: pointer;
+
+        span {
+            display: block;
+            position: relative;
+            height: 100%;
+            width: 100%;
+            transition: transform 0.6s $ease-in-out;
+
+            &::after,
+            &::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin: -1px -13px;
+                background: $color-black;
+                height: 2px;
+                width: 26px;
+                transform: rotate(45deg);
+            }
+
+            &::after {
+                transform: rotate(-45deg);
+            }
+        }
+
+        @include hover {
+            span {
+                transform: rotate(90deg);
+            }
+        }
+    }
+}

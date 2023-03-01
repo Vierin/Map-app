@@ -1,0 +1,17 @@
+html,
+body {
+    background: $color-bg;
+}
+
+body {
+    position: relative;
+    display: block;
+    font-family: $font-sans;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+

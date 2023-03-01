@@ -1,0 +1,28 @@
+image: atlassian/default-image:3
+pipelines:
+  custom:
+    deploy-to-permalink:
+      - variables:
+            - name: s3Environment
+            - name: CMSPermalink
+            - name: jsonString
+            - name: apiBase
+      - step:
+          script:
+            - pipe: atlassian/aws-s3-deploy:0.3.7
+              variables:
+                AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+                AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+                AWS_DEFAULT_REGION: 'us-east-1'
+                S3_BUCKET: 'brandstudio-$s3Environment/$CMSPermalink'
+                LOCAL_PATH: '$BITBUCKET_CLONE_DIR/dist'
+                ACL: 'private'
+      - step:
+          clone:
+            enabled: false
+          script:
+          - >
+            curl -X POST "https://$apiBase/parseCmsData" 
+            -H "Content-Type:application/json" 
+            --data-binary $jsonString
+

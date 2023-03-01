@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map App</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+    <div class="header">
+        <div class="header__logo">
+            <a href=""><img src="./media/logo.png" alt=""></a>
+        </div>
+    </div>
+
+    <main>
+        <section>
+            <div class="map" data-module="Map"></div>
+        </section>
+
+        <aside class="sidebar">
+            <div class="sidebar__wrap js-wrap"></div>
+            <div class="sidebar__nav">
+                <div class="sidebar__arr sidebar__arr--prev"><span class="js-prev">prev</span></div>
+                <div class="sidebar__arr sidebar__arr--next"><span class="js-next">next</span></div>
+                <div class="sidebar__count">
+                    <span class="js-curr"></span>
+                    <span class="js-amount"></span>
+                </div>
+            </div>
+
+            <div class="sidebar__close js-close">
+                <span></span>
+            </div>
+        </aside>
+    </main>
+
+    <script src="./js/script.js" async></script>
+</body>
+</html>

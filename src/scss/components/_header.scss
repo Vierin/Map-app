@@ -1,0 +1,19 @@
+.header {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    z-index: 2;
+
+    &__logo {
+        width: vw(90);
+
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
+
+        @include breakpoint(not-desktop) {
+            width: 90px;
+        }
+    }
+}

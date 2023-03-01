@@ -1,0 +1,312 @@
+{
+  "pageTitle": "WP Default",
+  "clientName": "Client",
+  "projectName": "Project",
+  "baseURL": "",
+  "share": {
+    "social": {
+      "trackingSuffix": "sidebar"
+    }
+  },
+  "socialBase": {
+    "facebook": {
+      "link": "[[ wp:data meta.social_facebook.link ]]",
+      "tracking": {
+        "label": "social-share-facebook",
+        "category": "social",
+        "action": "social-share"
+      }
+    },
+    "twitter": {
+      "link": "[[ wp:data meta.social_twitter.link ]]",
+      "text": "[[ wp:data meta.social_twitter.description ]]",
+      "hashtag": "[[ wp:data meta.social_twitter.hashtag ]]",
+      "tracking": {
+        "label": "social-share-twitter",
+        "category": "social",
+        "action": "social-share"
+      }
+    },
+    "linkedin": {
+      "link": "[[ wp:data meta.social_linkedin.link ]]",
+      "tracking": {
+        "label": "social-share-linkedin",
+        "category": "social",
+        "action": "social-share"
+      }
+    },
+    "mail": {
+      "subject": "[[ wp:data meta.social_email.title ]]",
+      "text": "[[ wp:data meta.social_email.description ]]",
+      "link": "[[ wp:data meta.social_email.link ]]",
+      "tracking": {
+        "label": "social-share-email",
+        "category": "social",
+        "action": "social-share"
+      }
+    },
+    "copy": {
+      "link": "[[ wp:data meta.social_email.link ]]",
+      "tracking": {
+        "label": "social-share-link",
+        "category": "social",
+        "action": "social-share"
+      }
+    }
+  },
+  "sections": [
+    {
+      "modules": [
+        {
+          "type": "hero",
+          "title": "The Care Crisis Could Shrink the U.S. Economy by Hundreds of Billions",
+          "copy": "A shortage of caregivers isn’t just a problem for American families: new research from BCG shows that by 2030, it could take a serious toll on the U.S. economy. Experts dive into solutions.",
+          "logo": "./media/logo.png",
+          "image": {
+            "preload": true,
+            "desktop": "./media/hero.jpg",
+            "mobile": "./media/hero-m.jpg",
+            "alt": "A woman and five children play with toys and games"
+          },
+          "scrollDown": {
+            "text": "scroll",
+            "tracking": "hero-scroll"
+          }
+        },
+        {
+          "type": "socials",
+          "social": {
+            "title": false,
+            "trackingSuffix": "top-bar"
+          }
+        },
+        {
+          "type": "text-one-col",
+          "grid": true,
+          "texts": [
+            "Picture this: One day at the office of a fast-growing company, a beloved manager gets a terrible phone call: Their father has been diagnosed with Alzheimer’s, and their family can’t find anyone to take care of him. They approach their HR department, asking to fly home for an unknown span of time to care for their dad. Instead, their company offers them an ultimatum:"
+          ]
+        },
+        {
+          "type": "text-two-cols",
+          "grid": true,
+          "small": true,
+          "customClass": ["module--small-cols"],
+          "line": true,
+          "text1": [
+            "Stay at work"
+          ],
+          "text2": [
+            "Tender their resignation and re-enter the company once their time as a caregiver is over."
+          ]
+        },
+        {
+          "type": "text-one-col",
+          "grid": true,
+          "texts": [
+            "With great difficulty, they choose to head home, giving up their paycheck and benefits, possibly for months or more. Meanwhile, at the office, their HR department scrambles to find a replacement, adding to its list of a dozen open roles.",
+            "These difficult decisions are only becoming more common. The U.S. is facing a shortage of caregivers, in child care and elder care, in nurseries, schools, hospitals and homes. This is not just an issue for working parents or the companies that employ them — it’s becoming a national crisis."
+          ]
+        }, 
+        {
+          "type": "info",
+          "text": "A new study from BCG and Dynata forecasts that <br class='phone-hide'>  the country’s caregiver shortage will <br class='phone-hide'> lead to a $290 billion per year loss to U.S. GDP in 2030 and beyond."
+        },
+        {
+          "type": "text-one-col",
+          "grid": true,
+          "texts": [
+            "Where does that loss come from? In a recent Washington Post Live interview, BCG North America Chair Sharon Marcil told reporter Elizabeth Vargas that the loss stems from two sources: a lack of available workers to fill caregiver roles; and the departure of productive employees from the paid labor force to take on unpaid care duties, whether they want to or not."
+          ]
+        },
+        {
+          "type": "quote",
+          "grid": true,
+          "text": "“People who have to<br class='desktop-hide tablet-hide'> make these hard <br class='phone-hide'> decisions, to leave jobs that they love, they <br class='phone-hide'> were contributing to their families and to the <br class='phone-hide'> economy, but they’ve been presented with no <br class='phone-hide'> other choice.”",
+          "footer": "<p>Sharon Marcil</p>"
+        },
+        {
+          "type": "video",
+          "large": true,
+          "defaultPadding": true,
+          "title": "Watch the full interview <br> from the Washington Post’s Global Women’s Summit",
+          "grid": true,
+          "wapoVideo": {
+            "autoplay": true,
+            "id": "63753b0b8b967e5213a96878",
+            "player": "player1",
+            "yt": "5KLVJvGD6yI",
+            "poster": "",
+            "tracking": "Global womens summit interview",
+            "uuid": "9ad91ee7-ffdd-41dc-a856-c581928aee16",
+            "caption": ""
+          }
+        },
+        {
+          "type": "text-two-cols",
+          "full": true,
+          "customClass": ["module--gradient"],
+          "title1": "HOW BIG IS THE CARE ECONOMY?",
+          "text1": [
+            "More than half the U.S. workforce — around <span class='text--green'>90 million</span> people — have care responsibilities outside of their full-time jobs, to children, to a spouse, or to an older family member. On average those care responsibilities amount to 30 hours every week: almost the equivalent of a full-time job.",
+            "Approximately <span class='text--blue'>40 million</span> of these Americans rely on paid care like nannies, daycares, part-time caregivers or residential care facilities in order to go to work. But care is harder to find than ever. According to Marcil, since 2020, one third of child care facilities have either shut down completely or have had to cut care by 50% or more due to lack of staff.",
+            "As the shortage of caregivers tightens, there is a compounding effect: When a mother suddenly can’t find care for her young child, or a husband for his ailing parent <br class='tablet-hide desktop-hide'>  — it can mean missed shifts, a job change or even a permanent departure from the workforce.",
+            "“Among those who lose paid care, <span>one in ten</span> just fully have to remove themselves from the workforce, even though they don’t want to, even though they need that paycheck,” Marcil said."
+          ],
+          "dots": true
+        }
+      ]
+    },
+    {
+      "modules": [
+        {
+          "type": "text-one-col",
+          "grid": true,
+          "texts": [
+            "Another 50 million U.S. workers rely on unpaid care from family or friends, or they <br class='phone-hide tablet-hide'> manage the care on their own. If these unpaid caregivers’ jobs aren’t flexible enough, this puts them, too, at risk of leaving the workforce.",
+            "“We’re always one crisis away from what feels like a house of cards toppling down,” said BCG Managing Director and Partner Suchi Sastri, speaking to her own experience as a working parent with young children. “There’s not a lot of slack built into the system.”",
+            "This steady departure of workers is exacerbating a growing labor shortage. In the wake of covid-19, the country is facing historic job vacancies, with 5 million more open jobs than there are people in the workforce. ",
+            "Many of those jobs — 1.8 million of them, according to BCG estimates — are in the care sector. There is a fundamental mismatch between the huge demand for care and the constrained supply of caregivers, Sastri said, and that opens the U.S. up to a massive economic impact."
+          ]
+        },
+        {
+          "type": "info",
+          "customClass": ["module--info-2"],
+          "text": "In 2030 and beyond, this gap could mean a $290 billion loss in U.S. gross domestic product every year, due to lost wages from unfilled care positions and reduced workforce participation. That’s larger than the annual GDP of 22 U.S. states — and almost twice that of <br class='desktop-hide'>  Washington, D.C."
+        },
+        {
+          "type": "chart",
+          "text": "Care jobs fill at their <span><span class='js-chart-word'></span> rate</span> since 2012. We’ll see a care-worker shortfall of <span>about <i class='js-chart-number'></i>%</span> by 2030. <span>About <i class='js-chart-number'></i>%</span> of employed caregivers leave the workforce.",
+          "options": [
+            {
+              "text": "Best Case",
+              "tracking": "filter-best-case"
+            },
+            {
+              "text": "Mid Case",
+              "tracking": "filter-mid-case"
+            },
+            {
+              "text": "Worst Case",
+              "tracking": "filter-worst-case"
+            }
+          ]
+        },
+        {
+          "type": "text-one-col",
+          "grid": true,
+          "texts": [
+            "The care crisis isn’t just about child care. By 2034, people 65 and older will outnumber people 18 and younger for the first time in U.S. history — and the share of the workforce who have care responsibilities for adults will continue to tick upwards.", 
+            "This problem doesn’t have a “silver bullet” fix. The good news, Sastri said, is that business and policy leaders can take steps immediately to turn the care crisis around."
+          ]
+        }
+        
+      ]
+    },
+    {
+      "border": true,
+      "modules": [
+        {
+          "type": "text-image-right",
+          "sticky": true,
+          "customClass": ["module--image-1", "module--gradient"],
+          "title": "Rethinking Caregiving Jobs",
+          "animation": true,
+          "texts": [
+            "By 2030, 75 percent of new jobs will be in the care economy. These jobs are strenuous, emotionally taxing and don’t often provide the flexibility or benefits packages as other industries",
+            "“It’s hard work to take care of elderly people,” Marcil told Vargas. “And the wages aren’t that much higher than minimum wage. It’s highly skilled work, and often if you compare it to the retail or hotel sectors, sometimes those jobs are more attractive.”",
+            "Raising wages can make jobs in the care economy more appealing. A recent City University of New York study estimated that raising pay for home care workers by 25 to 50 percent could generate $3.6 billion in economic savings across New York state, with the increases paying for themselves through tax revenue, public assistance savings and productivity gains.",
+            "Rethinking recruitment for care positions may also help fill vacant roles. Some states, including Arizona and Maine, have launched recruiting campaigns that brand care work as essential and rewarding and revamped training programs and employment portals to reduce barriers to entry.",
+            "Innovative technologies also have the potential to make caregiving roles more efficient, manageable and attractive. In 2021 alone, $3 billion was invested in care companies. Companies like <a href='https://sensi.ai/' target='_blank'>Sensi.Ai</a>, a virtual in-home care agent, relieve a difficult aspect of caregiver work: the need for constant intensive monitoring. Platforms like <a href='https://www.google.com/search?q=ianacare&rlz=1C5GCEM_enUS1016US1017&oq=ianacare&aqs=chrome..69i57j0i433i512j0i131i433j46i433i512j0i131i433i512j0i512j0i433i512j0i512l3.1155j0j4&sourceid=chrome&ie=UTF-8' target='_blank'>Ianacare</a> connect caregivers to employee benefits, local resources and a community of caregivers.",
+            "Caregiving is socially important — caregivers look after our children’s safety and make sure our grandparents take medication on time. But care roles are also crucial to economic health. With the right tweaks, they can be a powerful tool to bring back workers who are currently sidelined from the labor market and begin a chain reaction of economic growth."
+          ],
+          "image": {
+            "preload": true,
+            "src": "./media/img-1.jpg",
+            "alt": "A caregiver supports an elderly man using a walker"
+          }
+        },
+        {
+          "type": "text-image-left",
+          "sticky": true,
+          "animation": true,
+          "sideLeft": true,
+          "customClass": ["module--image-2", "module--gradient", "module--gradient-r"],
+          "title": "Rethinking The Workplace",
+          "texts": [
+            "For BCG’s business clients, addressing the care crisis should rank alongside issues like climate change and digital transformation, Sastri said. At the most basic level, companies need to offer <a href='https://www.bcg.com/capabilities/people-strategy/future-of-work' target='_blank'>some kind of flexible work</a>.",
+            "The next step <a href='https://www.bcg.com/publications/2021/working-caregivers-in-crisis-need-company-support' target='_blank'>is paid leave</a> — maternity and paternity leave, but also leave for employees who need to take care of a family member. Sastri described how her U.S.-based team at BCG allowed her to work from India for six months while she helped her father recover from an illness, and how eight years later, when her husband was diagnosed with cancer, they immediately gave her the time off she needed.",
+            "Above all, having paid leave can mean a huge boost to mental health. Paid leave gives employees space to navigate the emotional and logistical burdens of caregiving without adding work-related stress.",
+            "“Providing great leave policies is the right thing to do, but it’s also good business,” Marcil said.“It drives retention, it encourages recruitment and drives loyalty as well.”",
+            "But helping caregivers can’t fall to employers alone. The public sector must step up, too."
+          ],
+          "image": {
+            "preload": true,
+            "src": "./media/img-2.jpg",
+            "alt": "An elderly woman and a young woman smiling"
+          }
+        },
+        {
+          "type": "text-image-right",
+          "sticky": true,
+          "animation": true,
+          "customClass": ["module--image-3", "module--gradient"],
+          "title": "Rethinking Federal Support",
+          "texts": [
+            "The U.S. is the <a href='https://bipartisanpolicy.org/explainer/paid-family-leave-across-oecd-countries/' target='_blank'>only developed country in the world</a> without a nationwide paid maternity leave policy. And while some states require it, that is no substitute for a federal mandate.",
+            "“Right now, so much of the burden is falling on individuals and companies to pay for care,” Sastri said. “The research shows that typically you want your child-care expenses to be around 7 percent or less of your household income, but it’s already greater than 10 percent, and in some states even larger than that — and then we tack on inflation.”",    
+            "Two key policy planks can help stop this trend, Sastri said: universal child care and paid family leave. These policies are already paying dividends in other countries: The Canadian province of Quebec launched subsidized universal daycare in 1997 and subsequently grew the share of employed women with children younger than five by 25 percent. Germany saw similar positive trends when it increased federal support for daycare in 2005, with notable increases in the number of women in the workforce, as well as the national birth rate.", 
+            "Where federal policy currently falls short, some states are filling the gap: state-sponsored paid family leave up to eight weeks in California; universal pre-school in Oklahoma; and a new commitment to fund under-funded care centers in New York. But broader adoption is essential, Sastri said, and when it comes to covering the cost of caregiving in the U.S., government subsidies could go a long way."
+          ],
+          "image": {
+            "preload": true,
+            "src": "./media/img-3.jpg",
+            "alt": "A playroom with chairs and toys"
+          }
+        }
+      ]
+    },
+    {
+      "modules": [
+        {
+          "type": "text-one-col",
+          "customClass": ["module--grid-m"],
+          "title": "A MATTER OF TIME",
+          "smallTitle": true,
+          "texts": [
+            "For so many American families, Sastri said, it is only a matter of time before the care crisis become a concern at <br class='desktop-hide tablet-hide'> home."
+          ]
+        },
+        {
+          "type": "quote",
+          "customClass": ["module--quote-2"],
+          "grid": true,
+          "text": "“At some point, it does impact all of us,” <br> Sastri said. “We saw this with covid:  Whether it was kids, parents, a spouse or other people in the family, often, you need the ability to <br> take time off and take care of someone.”"
+        },
+        {
+          "type": "text-one-col",
+          "customClass": ["module--grid-m"],
+          "texts": [
+            "Many companies rapidly expanded their flexible work and paid leave benefits as the pandemic set in, and as covid cases have waned, those gains have been slowly eroding, Marcil said. But in her view, that trend simply can’t last.",
+            "“The talented workforce is going to become constrained, so to attract and retain the best people, companies are going to have to get better,” Marcil said. “I think when the economics, the loyalty benefits and the costs are better understood, we can help companies to move the needle.”"
+          ]
+        },
+        {
+          "type": "footer",
+          "logo": "./media/logo.png",
+          "noNav": true,
+          "button": {
+            "link": "https://www.bcg.com/capabilities/diversity-inclusion/working-caregivers",
+            "tracking": "dive-into-the-care-economy",
+            "text": "Dive into the care economy",
+            "animation": "scale"
+          },
+          "social": {
+            "title": "Share This Article:",
+            "trackingSuffix": "bottom-bar"
+          }
+        }
+      ]
+    }
+  ]
+}

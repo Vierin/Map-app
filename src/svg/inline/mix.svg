@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 73.98 30.95">
+  <g>
+    <polygon points="23.65 6.85 23.65 29.95 0.5 29.95 0.5 0.5 17.3 0.5 17.3 0.5 23.65 6.85" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+    <polyline points="23.65 6.85 17.3 6.85 17.3 0.5" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+    <line x1="4.1" y1="24.35" x2="20.05" y2="24.35" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+    <line x1="4.1" y1="18.45" x2="20.05" y2="18.45" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+    <line x1="4.1" y1="12.5" x2="20.05" y2="12.5" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+    <g>
+      <rect x="35.28" y="1.05" width="38.2" height="22.9" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+      <polygon points="60.68 12.55 55.68 15.35 50.68 18.25 50.68 12.55 50.68 6.75 55.68 9.65 60.68 12.55" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+      <line x1="36.88" y1="29.35" x2="71.88" y2="29.35" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+      <circle cx="42.78" cy="29.35" r="1.6" fill="#fff"/>
+    </g>
+  </g>
+</svg>

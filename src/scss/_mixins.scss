@@ -1,0 +1,138 @@
+@mixin full($position: absolute, $offset: 0) {
+    position: $position;
+    bottom: strip-units($offset) + px;
+    left: strip-units($offset) + px;
+    right: strip-units($offset) + px;
+    top: strip-units($offset) + px;
+}
+
+
+@mixin hover {
+    .mod_no-touchevents &:hover {
+        @content;
+    }
+}
+
+
+@function strip-units($value) {
+    @return $value / ($value * 0 + 1);
+}
+
+$browser-context: 16px;
+$line-height: 1.4;
+
+@mixin font-size($size: $browser-context, $line: $line-height) {
+    font-size: strip-units($size) + px;
+    font-size: (strip-units($size) / strip-units($browser-context)) + rem;
+
+    @if (strip-units($line) < 4) {
+        line-height: strip-units($line);
+    } @else {
+        line-height: (strip-units($line) / strip-units($size));
+    }
+}
+
+
+@function z($list, $element) {
+    $z-index: index($list, $element);
+    @if $z-index { @return $z-index; }
+    @warn 'There is no item "#{$element}" in this list; choose one of: #{$list}';
+    @return null;
+}
+
+
+@mixin z-index($element, $list: $elements) {
+    z-index: z($list, $element);
+}
+
+
+@mixin vertical-align($position: relative) {
+    position: $position;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+@mixin v-center {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+@mixin circle($size) {
+    width: strip-units($size) + px;
+    height: strip-units($size) + px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+
+
+@mixin scaling($width, $scale: 0.8) {
+    width: #{strip-units($width) * strip-units($scale)}px;
+}
+
+
+@mixin pseudo($width, $height, $top, $left, $background, $index) {
+    content: "";
+    position: absolute;
+    width: $width;
+    height: $height;
+    top: $top;
+    left: $left;
+    background: $background;
+    z-index: $index;
+}
+
+
+@mixin flex($direction: row, $justify: center, $align: center, $flex: flex) {
+    display: $flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+
+@function vw($size, $bp: desktop, $max: true) {
+    $layouts: (
+        desktop: 1400,
+        tablet: 768,
+        phone: 375,
+    );
+
+    @if map-has-key($layouts, $bp) {
+        @return strip-units($size) / map-get($layouts, $bp) * 100vw;
+    } @else {
+        @warn "Unfortunately, no value could be retrieved from `#{$bp}`.";
+    }
+}
+
+
+@function vh($size, $bp: desktop) {
+    $layouts: (
+        desktop: 800,
+        tablet: 1024,
+        phone: 667,
+    );
+
+    @if map-has-key($layouts, $bp) {
+        @return strip-units($size) / map-get($layouts, $bp) * 100vh;
+    } @else {
+        @warn "Unfortunately, no value could be retrieved from `#{$bp}`.";
+    }
+}
+
+
+@function height($size, $bp: phone) {
+    $layouts: (
+        desktop: 800,
+        tablet: 1024,
+        phone: 667
+    );
+
+    @if map-has-key($layouts, $bp) {
+        @return calc(var(--app-height) * #{$size / map-get($layouts, $bp)});
+    } @else {
+        @warn "Unfortunately, no value could be retrieved from `#{$bp}`.";
+    }
+}

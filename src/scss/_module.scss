@@ -1,0 +1,449 @@
+.module {
+    position: relative;
+    background-color: $color-bg;
+
+
+    &.is-in-center { pointer-events: auto; }
+
+
+    &--padding {
+        padding: 80px 0;
+
+        @include breakpoint(phone) {
+            padding: 40px 0;
+        }
+    }
+
+
+    &--full {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        border-bottom: 16px solid $color-green;
+        padding-bottom: 106px;
+        position: relative;
+        z-index: 2;
+        background: transparent;
+        overflow: hidden;
+
+        @include breakpoint(tablet-landscape) {
+            padding-bottom: 0;
+        }
+
+        .grid-11 {
+            &:after {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: calc(100% - 30px);
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: vw(300) vw(300) 0 0;
+                border-color: #faf9f5 transparent transparent transparent;
+                z-index: 2;
+
+                @media(min-width: 1800px) {
+                    border-width: vw(400) vw(685) 0 0;
+                }
+
+                @include breakpoint(tablet-landscape) {
+                    border-width: vw(320) vw(280) 0 0;
+                }
+
+                @include breakpoint(tablet) {
+                    border-width: vw(320) vw(300) 0 0;
+                }
+
+            }
+       }
+
+        @include breakpoint(tablet) {
+            padding: 0 40px;
+        }
+
+        @include breakpoint(phone) {
+            padding-bottom: 130px;
+            // height: calc(var(--app-height) * 3);
+        }
+
+        &.module--text-two-cols {
+            .grid-11 {
+                padding-top: 70px;
+
+                @include breakpoint(phone) {
+                    padding-top: 20px;
+                }
+            }
+        }
+
+        .grid-11 {
+            padding: 0 30px;
+            display: flex;
+
+            @include breakpoint(not-desktop) {
+                flex-direction: column;
+            }
+
+        }
+
+        p {
+            max-width: 530px;
+
+            @include breakpoint(tablet-landscape) {
+                max-width: 500px;
+            }
+        }
+
+        .grid-6 p {
+            padding-bottom: 180px !important;
+
+            &:last-of-type {
+                @include font-size(40, 44);
+                max-width: none;
+                min-width: 797px;
+
+                @include breakpoint(desktop) {
+                    @media(max-width: 1200px) {
+                        font-size: vw(40);
+                        line-height: 1.2;
+                        min-width: 70%;
+                    }
+                }
+
+                @include breakpoint(tablet-landscape) {
+                    font-size: vw(40);
+                    line-height: vw(44);
+                    min-width: 70%;
+                }
+
+                span {
+                    color: #51A9E5;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+
+    &--center {
+        text-align: center;
+    }
+
+    &--text-one-col {
+        .grid-7 {
+            padding: 0 vw(28);
+        }
+
+        #section-3 & {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &--small-cols { 
+        margin-top: 20px;
+        max-width: get-grid-width(8);
+        margin: 15px auto 35px;
+        padding: 0 40px;
+
+        @include breakpoint(not-desktop) {
+            padding: 0;
+            margin: 0;
+            margin-bottom: 50px;
+        }
+
+        .grid {
+            justify-content: space-between;
+
+            @include breakpoint(not-desktop) {
+                display: flex;
+                flex-wrap: nowrap;
+                flex-direction: row;
+                padding: 0 18px;
+            }
+        }
+
+        .grid-3 {
+            display: flex;
+            align-items: center;
+            margin: 0;
+            padding: 25px 0;
+
+            @include breakpoint(phone) {
+                padding: 0;
+            }
+
+            &:first-of-type {
+                justify-content: center;
+                position: relative;
+            }
+
+            &:last-of-type {
+                max-width: 300px;
+                margin-right: 20px;
+
+                @include breakpoint(phone) {
+                    margin-right: 0;
+                    margin-left: 30px;
+                }
+            }
+        }
+    }
+
+
+    &--space {
+        pointer-events: none;
+        background: none;
+
+        .ie & {
+            backface-visibility: hidden;
+            transform: translateZ(0);
+        }
+    }
+
+
+    &--dark {
+        background-color: $color-black;
+        color: $color-white;
+    }
+
+
+    &--hero {
+        z-index: 0;
+        background: $color-bg-1;
+    }
+
+    &--gradient { 
+        position: relative;
+        
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: vw(50);
+            background: linear-gradient(90deg, rgba(212,223,51,.8) 0%, rgba($color-bg,0) 100%);
+            z-index: 2;
+            pointer-events: none;   
+        }
+
+        &.module--full:before  {
+            top: 0;
+            height: 100%;
+            @media(min-width: 1800px) {
+                clip-path: polygon(0 vw(139), 100% vw(110), 100% 100%, 0 100%); 
+            }
+
+            @include breakpoint(tablet-landscape) {
+                top: calc(var(--app-height) * -.15); 
+                height: calc(100% + var(--app-height) * .15);
+            }
+
+            @include breakpoint(tablet) {
+                top: calc(var(--app-height) * -.06); 
+                height: calc(100% + var(--app-height) * .06);
+            }
+
+            @include breakpoint(phone) {
+                top: calc(var(--app-height) * -.05); 
+                height: calc(100% + var(--app-height) * .05);
+            }
+        }
+
+        &-r:before {
+            left: auto;
+            right: 0;
+            background: linear-gradient(-90deg, rgba(212,223,51,.8) 0%, rgba($color-bg,0) 100%);
+
+
+            @include breakpoint(not-desktop) {
+               left: 0;
+               right: auto;
+               background: linear-gradient(90deg, rgba(212,223,51,.8) 0%, rgba($color-bg,0) 100%);
+            }
+        }
+    }
+
+
+    &--footer {
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            width: 1px;
+            height: 64px;
+            background: $color-green;
+        }
+    }
+
+
+
+    &--quote {
+        @include v-center;
+
+        @include breakpoint(phone) {
+            .grid {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+        }
+    }
+
+    &--image-1 {
+        padding-bottom: 70px;
+    }
+
+    &--image-2 {
+        padding-bottom: 35px;
+    }
+
+    &--image-3 {
+        padding-bottom: 25px;
+
+        
+    }
+
+    &--text-image-right,
+    &--text-image-left {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .heading__title {
+            max-width: 50%;
+        }
+    }
+
+    &--explore {
+
+        [data-templates="multimedia"] & {
+            pointer-events: auto;
+        }
+
+        z-index: 2;
+    }
+
+
+
+    &--video {
+        position: relative;
+        z-index: 3;
+        background: transparent;
+        padding-top: 92px;
+        padding-bottom: 0;
+
+        @include breakpoint(phone) {
+            padding-top: 80px;
+
+            .grid {
+                padding-left: 24px;
+                padding-right: 24px;
+            }
+        }
+
+        figcaption {
+            color: $color-black;
+        }
+    }
+
+
+
+    &--hotspots {
+        height: var(--app-height);
+
+        @include breakpoint(not-desktop) {
+            height: 56vw;
+            margin-bottom: 130px;
+        }
+
+        @include breakpoint(ipad-pro) {
+            height: 56vw;
+        }
+
+        &.module--hotspots-swipe {
+            @include breakpoint(not-desktop) {
+                height: 420px;
+            }
+        }
+    }
+
+    &--grid-m {
+        @include breakpoint(tablet) {
+            .grid-7 {
+                width: calc(100% - 120px);
+                margin: 0 60px;
+            }
+        }
+
+        @include breakpoint(phone) {
+            .grid-7 {
+                width: calc(100% - 68px);
+                margin: 0 34px;
+            }
+        }
+    }
+
+    &#section-1-module-5 {
+        @include breakpoint(phone) {
+            display: none;
+        }
+    }
+
+    &--info {
+        display: flex;
+        justify-content: center;
+
+        &-2 p {
+            @include breakpoint(desktop) {
+                max-width: 530px !important;
+            }
+
+            @include breakpoint(phone) {
+                max-width: 285px;
+            }
+        }
+    }
+
+    &--quiz {
+        background-color: $color-silver;
+    }
+
+    &--socials {
+        display: flex;
+        justify-content: center;
+        padding: 23px 0 20px;
+        border-bottom: 1px solid $color-green;
+        border-top: 1px solid $color-green;
+        margin-bottom: 90px;
+
+        @include breakpoint(phone) {
+            margin-bottom: 34px;
+        }
+    }
+
+
+    &__background {
+        height: 100%;
+        position: absolute;
+        width: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        picture {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.mapboxgl {
+    &-marker {
+        cursor: pointer;
+
+        svg {
+            transform: scale(0.7);
+            transition: transform 0.5s $easing;
+            pointer-events: none;
+        }
+
+
+        circle {
+            transform: scale(0);
+            transform-origin: 50% 30%;
+            transition: transform 0.4s $easing;
+        }
+
+        &.is-active {
+            svg {
+                transform: scale(1);
+            }
+
+            circle {
+                transform: scale(1);
+            }
+        }
+    }
+}
